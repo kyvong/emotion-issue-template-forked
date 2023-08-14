@@ -14,16 +14,12 @@ const Title = styled.h1`
   color: ${(props) => props.theme.titleColor};
 `;
 
-const Heading = () => (
-  <Title css={(theme) => ({ color: theme.headerColor })}>
-    Emotion Issue Template
-  </Title>
-);
-
 export default function App() {
   return (
     <div className={appClassName}>
-      <Heading css={{ color: 'blue' }} />
+      <Title css={(theme) => ({ color: theme.headerColor })}>
+        Emotion Issue Template
+      </Title>
 
       {/* css prop example */}
       <h2 css={{ color: 'salmon' }}>Start editing to see some magic happen!</h2>
